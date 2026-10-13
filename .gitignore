@@ -1,0 +1,5 @@
+pxt_modules/
+built/
+node_modules/
+log/
+__pycache__/

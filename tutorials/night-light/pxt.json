@@ -1,0 +1,15 @@
+{
+    "name": "night-light-tutorial",
+    "description": "Self-paced lesson: a light that switches on when the room is dark",
+    "version": "0.1.0",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
+}
