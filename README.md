@@ -5,7 +5,7 @@ Two small prototypes for running micro:bit classes with less lost time.
 | Folder | What it is | Status |
 |---|---|---|
 | `reset-station/` | Plug micro:bits into a laptop and each one is reset to a standard program, checked and logged | Works on a test folder. Not yet tried on a real board |
-| `tutorials/night-light/` | One lesson rewritten as a self-paced MakeCode tutorial, with a wiring picture | Written. Not yet opened in MakeCode |
+| `night-light.md` | One lesson rewritten as a self-paced MakeCode tutorial, with a wiring picture | Written. Not yet opened in MakeCode |
 
 ## Reset station
 
@@ -51,12 +51,14 @@ npx makecode build && cp built/binary.hex ../class-ready.hex
 
 ## Self-paced tutorial
 
-`tutorials/night-light/README.md` is a full lesson in MakeCode's tutorial format. Each student sees one step at a time, with only the blocks that step needs and a hint if they are stuck. It has a "predict first" step, a "change it" step and an open challenge, so students do more than copy.
+`night-light.md` is a full lesson in MakeCode's tutorial format. Each student sees one step at a time, with only the blocks that step needs and a hint if they are stuck. It has a "predict first" step, a "change it" step and an open challenge, so students do more than copy.
+
+MakeCode reads tutorials from the top of a repo, which is why `pxt.json`, `main.ts` and the lesson file sit there. Each new lesson is one more `.md` file listed in `pxt.json`. The repo must be **public**.
 
 To open it, once this repo is on GitHub:
 
 ```
-https://makecode.microbit.org/#tutorial:https://github.com/bitxHunt/microbit-classkit/tutorials/night-light
+https://makecode.microbit.org/#tutorial:https://github.com/bitxHunt/microbit-classkit/night-light
 ```
 
 Without GitHub: make a new project at makecode.microbit.org, switch to JavaScript, open Explorer, paste the tutorial text into `README.md`, share the project, then open `https://makecode.microbit.org/#tutorial:<the share link>`. The wiring picture only shows once the repo is public, because the tutorial loads it from GitHub.

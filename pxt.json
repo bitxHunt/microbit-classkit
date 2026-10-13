@@ -1,0 +1,16 @@
+{
+    "name": "microbit-classkit",
+    "description": "Self-paced micro:bit lessons (MakeCode tutorials) and a reset station",
+    "version": "0.1.0",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "main.ts",
+        "README.md",
+        "night-light.md"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
+}
